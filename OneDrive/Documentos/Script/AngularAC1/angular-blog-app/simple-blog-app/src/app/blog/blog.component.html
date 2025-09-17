@@ -1,0 +1,17 @@
+<div *ngFor="let post of posts" class="post-card">
+  <h2>{{ post.title }}</h2>
+  <p><strong>Autor:</strong> {{ post.author }}</p>
+  <p><strong>Data de publicação:</strong> {{ post.date | date }}</p>
+  <p>{{ post.content }}</p>
+  <p><strong>Curtidas:</strong> {{ post.likes }}</p>
+  <button (click)="likePost(post)">Curtir</button>
+
+  <div class="comments-section">
+    <h3>Comentários:</h3>
+    <ul>
+      <li *ngFor="let comment of post.comments">{{ comment }}</li>
+    </ul>
+    <input [(ngModel)]="newComment" placeholder="Adicione um comentário" />
+    <button (click)="addComment(post)">Comentar</button>
+  </div>
+</div>

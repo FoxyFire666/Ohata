@@ -1,0 +1,87 @@
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.post-title {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.post-author {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.post-date {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.post-content {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.like-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.like-button:hover {
+    background-color: #0056b3;
+}
+
+.comment-section {
+    margin-top: 15px;
+}
+
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-button {
+    margin-top: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-button:hover {
+    background-color: #218838;
+}
+
+.comments-list {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.comment-item {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
